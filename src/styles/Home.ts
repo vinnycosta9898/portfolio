@@ -25,13 +25,13 @@ export const TitleContainer = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Great Vibes;
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 `
 
@@ -44,8 +44,8 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     background-color: #313131;
     border: 3px solid #000;
     border-radius: 1rem;
