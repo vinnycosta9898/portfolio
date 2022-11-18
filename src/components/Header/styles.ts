@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
     a{
         color: #fff;
         font-family: Poppins;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 1rem 1rem;
 
         &:hover{
