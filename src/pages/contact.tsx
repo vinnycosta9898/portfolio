@@ -1,8 +1,8 @@
-import { Container, CardContainer, TextContainer } from './styles'
+import { Container, CardContainer, TextContainer } from '../styles/pages/contact'
 
 import Image from 'next/image'
 
-import { social } from '../../utils/social'
+import { social } from '../utils/social'
 
 export default function Contact(){
     return(

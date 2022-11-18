@@ -1,4 +1,4 @@
-import { Container, Avatar, ProfileDescription } from './styles'
+import { Container, Avatar, ProfileDescription } from '../styles/pages/about'
 
 export default function About(){
     return(

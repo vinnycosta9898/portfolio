@@ -1,10 +1,10 @@
-import { Container, CardContainer } from './styles'
+import { Container, CardContainer } from '../styles/pages/projects'
 
 import Image from 'next/image'
 
 import photo from '../../assets/photo.png'
 
-import { projects } from '../../utils/projects'
+import { projects } from '../utils/projects'
 
 export default function Projects(){
     return(
