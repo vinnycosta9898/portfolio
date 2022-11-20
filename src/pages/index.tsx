@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import Image from 'next/image'
 
-import { Container, Avatar, TitleContainer, FooterContainer, CardContainer} from '../styles/pages/Home'
+import { Container, Avatar, TitleContainer, FooterContainer, CardContainer} from '../styles/pages/home'
 
 import { techs } from '../utils/techs'
 
