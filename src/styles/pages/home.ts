@@ -11,12 +11,18 @@ export const Avatar = styled.img`
     height: 25rem;
     border-radius: 50%;
     margin: 2rem 0;
+
+    @media (max-width: 550px){
+        width: 20rem;
+        height: 20rem;
+    }  
 `
 
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
 
     h1{
         background: -webkit-linear-gradient(45deg, rgb(0, 188, 212), rgb(0, 255, 149) 80%);
@@ -26,17 +32,34 @@ export const TitleContainer = styled.div`
         -webkit-text-fill-color: transparent;
         font-family: Great Vibes;
         font-size: 4rem;
+
+        @media (max-width: 550px){
+            font-size: 3rem;
+        }
+
+        @media (max-width: 450px){
+            font-size: 2rem;
+        }
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
         font-size: 2rem;
+
+        @media (max-width: 550px){
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 450px){
+            font-size: 1rem;
+        }
     }
 `
 
 export const FooterContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
 `
 
 export const CardContainer = styled.div`
@@ -55,6 +78,11 @@ export const CardContainer = styled.div`
         width: 70%;
         height: 70%;
         cursor: pointer;
+
+        @media (max-width: 550px){
+            width: 60%;
+            height: 60%;
+        }
     }
 
     &:hover{
@@ -65,5 +93,14 @@ export const CardContainer = styled.div`
         color: #fff;
         font-size: 1.5rem;
         font-family: Poppins;
+
+        @media (max-width:550px){
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 550px){
+        width: 6rem;
+        height: 6rem;
     }
 `
