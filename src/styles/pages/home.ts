@@ -75,8 +75,8 @@ export const CardContainer = styled.div`
     margin: 2rem 1rem;
 
     img{
-        width: 70%;
-        height: 70%;
+        width: 65%;
+        height: 65%;
         cursor: pointer;
 
         @media (max-width: 550px){
@@ -91,7 +91,7 @@ export const CardContainer = styled.div`
 
     strong{
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-family: Poppins;
 
         @media (max-width:550px){
