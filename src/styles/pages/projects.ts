@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     margin: 4rem 2rem;
+
+    @media (max-width: 1090px){
+        flex-wrap: wrap;
+    }
 `
 
 export const CardContainer = styled.div`
@@ -39,5 +43,9 @@ export const CardContainer = styled.div`
 
     &:hover{
         border-color: aquamarine;
+    }
+
+    @media (max-width: 1090px){
+        margin: 2rem 0;
     }
 `
