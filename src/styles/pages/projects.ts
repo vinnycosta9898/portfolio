@@ -10,8 +10,8 @@ export const Container = styled.div`
 `
 
 export const CardContainer = styled.div`
-    width: 30rem;
-    height: 30rem;
+    width: 28rem;
+    height: 28rem;
     background-color: #313131;
     border-radius: 1rem;
     border: 3px solid #000;

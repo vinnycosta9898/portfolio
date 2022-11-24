@@ -98,9 +98,4 @@ export const CardContainer = styled.div`
             font-size: 1rem;
         }
     }
-
-    @media (max-width: 550px){
-        width: 6rem;
-        height: 6rem;
-    }
 `
