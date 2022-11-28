@@ -9,9 +9,9 @@ interface ProjectsProps{
 export const projects : ProjectsProps[] = [
     {
         id: "1",
-        name: "Movie Flix", 
-        img_url: "https://raw.githubusercontent.com/vinnycosta9898/movie-flix/master/photo.png",
-        repo_url: "https://github.com/vinnycosta9898/movie-flix",
+        name: "React Movies", 
+        img_url: "https://raw.githubusercontent.com/vinnycosta9898/react-movies/master/photo2.png",
+        repo_url: "https://github.com/vinnycosta9898/react-movies",
         techs: "Axios | React | React Hoooks"  
     },
 
