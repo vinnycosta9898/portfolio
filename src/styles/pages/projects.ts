@@ -38,6 +38,7 @@ export const CardContainer = styled.div`
         color: #d7995b;
         font-family: Poppins;
         font-size: 1rem;
+        text-align: center;
 
     }
 

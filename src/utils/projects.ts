@@ -10,7 +10,7 @@ export const projects : ProjectsProps[] = [
     {
         id: "1",
         name: "React Movies", 
-        img_url: "https://raw.githubusercontent.com/vinnycosta9898/react-movies/master/photo2.png",
+        img_url: "https://raw.githubusercontent.com/vinnycosta9898/react-movies/master/photo1.png",
         repo_url: "https://github.com/vinnycosta9898/react-movies",
         techs: "Axios | React | React Hoooks"  
     },
@@ -28,6 +28,6 @@ export const projects : ProjectsProps[] = [
         name: "Minha Carteira", 
         img_url: "https://raw.githubusercontent.com/vinnycosta9898/minha-carteira/master/photo2.png",
         repo_url: "https://github.com/vinnycosta9898/minha-carteira",
-        techs: "React | Recharts| Styled-Components | TypeScript"   
+        techs: "React | Recharts | Styled-Components | TypeScript"   
     }
 ]
