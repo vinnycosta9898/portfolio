@@ -7,11 +7,15 @@ export const Container = styled.div`
     @media (max-width: 1090px){
         flex-wrap: wrap;
     }
+
+    @media(min-width: 375px) and (max-width: 550px){
+        margin: 0 25%;
+    }
 `
 
 export const CardContainer = styled.div`
-    width: 25rem;
-    height: 25rem;
+    width: 26rem;
+    height: 26rem;
     background-color: #313131;
     border-radius: 1rem;
     border: 3px solid #000;
@@ -23,9 +27,9 @@ export const CardContainer = styled.div`
     margin: 0 2rem;
 
     img{
-        width: 99%;
+        width: 100%;
         height: 80%;
-        border-radius: 1rem;
+        border-radius: 0.9rem;
     }
 
     h2{
@@ -37,7 +41,7 @@ export const CardContainer = styled.div`
     h3{
         color: #d7995b;
         font-family: Poppins;
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-align: center;
 
     }

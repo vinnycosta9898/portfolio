@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(min-width: 375px) and (max-width: 550px){
+        margin: 0 30%;
+    }
+
 `
 
 export const Avatar = styled.img`
@@ -12,7 +19,7 @@ export const Avatar = styled.img`
     border-radius: 50%;
     margin: 2rem 0;
 
-    @media (max-width: 550px){
+    @media (max-width: 551px){
         width: 20rem;
         height: 20rem;
     }  
@@ -33,7 +40,7 @@ export const TitleContainer = styled.div`
         font-family: Great Vibes;
         font-size: 4rem;
 
-        @media (max-width: 550px){
+        @media (max-width: 551px){
             font-size: 3rem;
         }
 
@@ -60,6 +67,10 @@ export const TitleContainer = styled.div`
 export const FooterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    @media (min-width: 375px) and (max-width: 550px){
+        margin: 0 20px;
+    }
+
 `
 
 export const CardContainer = styled.div`

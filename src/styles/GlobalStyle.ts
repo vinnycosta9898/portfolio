@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     *{
         padding: 0;
-        margin: 0;
+        margin: 0px;
         box-sizing: border-box;
         text-decoration: none;
     }
@@ -13,4 +13,5 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         background-color: #000;
     }
+    
 `

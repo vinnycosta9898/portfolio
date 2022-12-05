@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 5rem 0;
@@ -16,9 +18,14 @@ export const TextContainer = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
         font-family: Poppins;
         font-size: 2.5rem;
         padding-right: 10rem;
+
+        @media (min-width: 375px) and (max-width: 550px){
+            font-size: 1.5rem;
+        }
     }
 `
 

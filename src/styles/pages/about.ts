@@ -1,9 +1,15 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(min-width: 375px) and (max-width: 550px){
+        margin: 0 30%;
+    }
 
 `
 
@@ -12,6 +18,11 @@ export const Avatar = styled.img`
     height: 25rem;
     border-radius: 50%;
     margin: 2rem 0;
+
+    @media (max-width: 550px){
+        width: 20rem;
+        height: 20rem;
+    }
 `
 
 export const ProfileDescription = styled.div`
@@ -29,5 +40,9 @@ export const ProfileDescription = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media (max-width: 375px) and (max-width: 550px){
+            font-size: 1.5rem;
+        }
     }
 `
