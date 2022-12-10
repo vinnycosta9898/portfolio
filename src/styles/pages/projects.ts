@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    margin: 4rem 2rem;
+    margin: 4rem 1rem;
 
     @media (max-width: 1090px){
         flex-wrap: wrap;
