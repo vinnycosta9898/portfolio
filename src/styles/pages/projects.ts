@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    width: 100vw;
+    height: 100%;
     display: flex;
-    margin: 4rem 1rem;
+    margin: 4rem 0;
 
     @media (max-width: 1090px){
         flex-wrap: wrap;
