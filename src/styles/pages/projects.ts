@@ -9,15 +9,12 @@ export const Container = styled.div`
 
     @media (max-width: 1090px){
         grid-template-columns: 1fr 1fr;
-        flex-wrap: wrap;
     }
 
     @media (max-width: 800px){
         grid-template-columns: 1fr;
         margin: 0 25%;
     }
-
-
 
     @media(min-width: 375px) and (max-width: 550px){
         margin: 0 25%;
