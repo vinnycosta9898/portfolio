@@ -8,8 +8,11 @@ export const Container = styled.div`
     margin: 2rem 0;
 
     @media (max-width: 1090px){
+        grid-template-columns: 1fr 1fr;
         flex-wrap: wrap;
     }
+
+
 
     @media(min-width: 375px) and (max-width: 550px){
         margin: 0 25%;
