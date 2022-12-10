@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,10 +85,11 @@ export const CardContainer = styled.div`
     border-radius: 1rem;
     margin: 2rem 1rem;
 
+    cursor: pointer;
+
     img{
         width: 65%;
         height: 65%;
-        cursor: pointer;
 
         @media (max-width: 550px){
             width: 60%;
@@ -98,6 +99,7 @@ export const CardContainer = styled.div`
 
     &:hover{
         border-color: aquamarine;
+        transform: scale(1.3);
     }
 
     strong{

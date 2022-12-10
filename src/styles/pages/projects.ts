@@ -48,6 +48,7 @@ export const CardContainer = styled.div`
 
     &:hover{
         border-color: aquamarine;
+        transform: scale(1.2);
     }
 
     @media (max-width: 1090px){
