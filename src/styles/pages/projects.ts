@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100vw;
     height: 100%;
-    display: flex;
-    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem 0;
 
     @media (max-width: 1090px){
         flex-wrap: wrap;
@@ -16,8 +17,8 @@ export const Container = styled.div`
 `
 
 export const CardContainer = styled.div`
-    width: 26rem;
-    height: 26rem;
+    width: 24rem;
+    height: 24rem;
     background-color: #313131;
     border-radius: 1rem;
     border: 3px solid #000;
@@ -26,7 +27,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 2rem;
+    margin: 1rem 2rem;
 
     img{
         width: 100%;
