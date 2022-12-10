@@ -99,7 +99,7 @@ export const CardContainer = styled.div`
 
     &:hover{
         border-color: aquamarine;
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
     strong{
