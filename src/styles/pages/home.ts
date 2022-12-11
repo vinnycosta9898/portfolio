@@ -79,12 +79,12 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     background-color: #313131;
     border: 3px solid #000;
     border-radius: 1rem;
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
 
     cursor: pointer;
 

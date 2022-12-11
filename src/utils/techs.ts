@@ -59,4 +59,11 @@ export const techs: TechData[] = [
         name: "Sass",
         img_url: "https://cdn.worldvectorlogo.com/logos/sass-1.svg"
     },
+
+    {
+        id: "10",
+        name: "Tailwind",
+        img_url: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg"
+    },
+
 ]

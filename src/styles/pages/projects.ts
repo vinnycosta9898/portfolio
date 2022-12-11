@@ -22,7 +22,7 @@ export const Container = styled.div`
     }
 `
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.a`
     width: 21rem;
     height: 21rem;
     background-color: #313131;
