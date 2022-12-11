@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1rem 0;
+    overflow-y: hidden;
 
     @media (max-width: 1090px){
         grid-template-columns: 1fr 1fr;
@@ -22,8 +23,8 @@ export const Container = styled.div`
 `
 
 export const CardContainer = styled.div`
-    width: 22rem;
-    height: 22rem;
+    width: 21rem;
+    height: 21rem;
     background-color: #313131;
     border-radius: 1rem;
     border: 3px solid #000;
