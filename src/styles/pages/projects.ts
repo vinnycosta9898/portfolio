@@ -5,7 +5,7 @@ export const Container = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 2rem 0;
+    margin: 1rem 0;
 
     @media (max-width: 1090px){
         grid-template-columns: 1fr 1fr;
@@ -32,7 +32,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
 
     img{
         width: 100%;
