@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: hidden;
 
     @media(min-width: 375px) and (max-width: 550px){
         margin: 0 30%;
