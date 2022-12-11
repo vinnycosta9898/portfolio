@@ -8,7 +8,7 @@ export default function Contact(){
     return(
         <Container>
             <TextContainer>
-                <h2>Sinta-se a Vontade para entrar em contato...</h2>
+                <h2>Entre em contato comigo...</h2>
             </TextContainer>
             {
                 social.map((item) => (

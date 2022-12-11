@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     h2{
         background: -webkit-linear-gradient(45deg, rgb(0, 188, 212), rgb(0, 255, 149) 80%);
@@ -21,10 +21,10 @@ export const TextContainer = styled.div`
         
         font-family: Poppins;
         font-size: 2.5rem;
-        padding-right: 10rem;
+        padding-left: 2rem;
 
         @media (min-width: 375px) and (max-width: 550px){
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
     }
 `
