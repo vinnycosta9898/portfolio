@@ -126,5 +126,9 @@ export const CardContainer = styled.div`
         @media (max-width: 730px){
             font-size: 1rem;
         }
+
+        @media (max-width: 430px){
+            font-size: 0.8rem;
+        }
     }
 `
