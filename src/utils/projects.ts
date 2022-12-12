@@ -13,7 +13,7 @@ export const projects : ProjectsProps[] = [
         name: "Cep Locator", 
         img_url: "https://raw.githubusercontent.com/vinnycosta9898/cep-locator/master/photo2.png",
         repo_url: "https://github.com/vinnycosta9898/cep-locator",
-        techs: "Axios | CSS | JSX | React "   
+        techs: "Axios | CSS | React "   
     },
 
     {

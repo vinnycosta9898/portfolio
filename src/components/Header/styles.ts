@@ -14,6 +14,14 @@ export const HeaderContainer = styled.div`
 
         &:hover{
         color: aquamarine;
-    }
+        }
+
+        @media (max-width: 650px){
+            font-size: 1rem;
+        }
+
+        @media (max-width: 450px){
+            margin: 1rem 0.5rem;
+        }
     }
 `

@@ -1,4 +1,4 @@
-import { Container, CardContainer } from '../styles/pages/projects'
+import { Container, CardsContainer, CardContainer } from '../styles/pages/projects'
 
 import Image from 'next/image'
 
@@ -9,6 +9,7 @@ import { projects } from '../utils/projects'
 export default function Projects(){
     return(
         <Container>
+            <CardsContainer>
             {
                 projects.map((item) => (
                     <a href={item.repo_url} key={item.id} target="blanck">
@@ -20,6 +21,7 @@ export default function Projects(){
                     </a>
                 ))
             }
+            </CardsContainer>
         </Container>
     )
 }

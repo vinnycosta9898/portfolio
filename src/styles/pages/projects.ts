@@ -3,22 +3,22 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100vw;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+`
+
+export const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 1rem 0;
-    overflow-y: hidden;
+    gap: 2rem;
 
-    @media (max-width: 1090px){
+    @media (max-width: 1260px){
         grid-template-columns: 1fr 1fr;
     }
 
-    @media (max-width: 800px){
+    @media (max-width: 730px){
         grid-template-columns: 1fr;
-        margin: 0 25%;
-    }
-
-    @media(min-width: 375px) and (max-width: 550px){
-        margin: 0 35%;
     }
 `
 
@@ -35,6 +35,16 @@ export const CardContainer = styled.a`
     align-items: center;
     margin: 1rem 1rem;
 
+    @media (max-width: 800px){
+        width: 20rem;
+        height: 20rem;
+    }
+
+    @media (max-width: 550px){
+        width: 18rem;
+        height: 18rem;
+    }
+
     img{
         width: 100%;
         height: 80%;
@@ -45,6 +55,14 @@ export const CardContainer = styled.a`
         color: #fff;
         font-family: Poppins;
         font-size: 2rem;
+        
+        @media (max-width: 800px){
+            font-size: 1.7rem;
+        }
+
+        @media (max-width: 550px){
+            font-size: 1.3rem;
+        }
     }
 
     h3{
@@ -53,14 +71,18 @@ export const CardContainer = styled.a`
         font-size: 0.9rem;
         text-align: center;
 
+        @media (max-width: 800px){
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 550px){
+            font-size: 0.6rem;
+        }
+
     }
 
     &:hover{
         border-color: aquamarine;
         transform: scale(1.1);
-    }
-
-    @media (max-width: 1090px){
-        margin: 2rem 0;
     }
 `

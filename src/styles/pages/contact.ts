@@ -23,8 +23,8 @@ export const TextContainer = styled.div`
         font-size: 2.5rem;
         padding-left: 2rem;
 
-        @media (min-width: 375px) and (max-width: 550px){
-            font-size: 1.6rem;
+        @media (max-width: 575px){
+            font-size: 1.5rem;
         }
     }
 `
@@ -42,8 +42,20 @@ export const CardContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 575px){
+        width: 15rem;
+        height: 4rem;
+    }
+
     img{
+        width: 4rem;
+        height: 4rem;
         margin: 0 0.5rem;
+        
+        @media (max-width: 575px){
+            width: 3rem;
+            height: 3rem;
+        }
     }
 
     h3{

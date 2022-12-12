@@ -6,11 +6,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media(min-width: 375px) and (max-width: 550px){
-        margin: 0 30%;
-    }
-
 `
 
 export const Avatar = styled.img`
@@ -19,9 +14,14 @@ export const Avatar = styled.img`
     border-radius: 50%;
     margin: 2rem 0;
 
-    @media (max-width: 550px){
+    @media (max-width: 730px){
         width: 20rem;
         height: 20rem;
+    }
+
+    @media (max-width: 430px){
+        width: 15rem;
+        height: 15rem;
     }
 `
 
@@ -41,8 +41,12 @@ export const ProfileDescription = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        @media (max-width: 375px) and (max-width: 550px){
+        @media (max-width: 730px){
             font-size: 1.5rem;
+        }
+
+        @media (max-width: 430px){
+            font-size: 1rem;
         }
     }
 `

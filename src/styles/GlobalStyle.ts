@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    body, html{
+    body{
         width: 100vw;
         height: 100%;
         background-color: #000;

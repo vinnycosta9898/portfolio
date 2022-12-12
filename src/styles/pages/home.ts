@@ -6,24 +6,23 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: hidden;
-
-    @media(min-width: 375px) and (max-width: 550px){
-        margin: 0 30%;
-    }
-
 `
 
 export const Avatar = styled.img`
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
-    margin: 2rem 0;
+    margin: 2rem 0; 
 
-    @media (max-width: 551px){
+    @media (max-width: 730px){
         width: 20rem;
         height: 20rem;
-    }  
+    }
+
+    @media (max-width: 430px){
+        width: 15rem;
+        height: 15rem;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -40,27 +39,41 @@ export const TitleContainer = styled.div`
         -webkit-text-fill-color: transparent;
         font-family: Great Vibes;
         font-size: 4rem;
-
-        @media (max-width: 551px){
-            font-size: 3rem;
-        }
-
-        @media (max-width: 450px){
-            font-size: 2rem;
-        }
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
         font-size: 2rem;
+    }
 
-        @media (max-width: 550px){
+    @media (max-width: 730px){
+        h1{
+            font-size: 3rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 430px){
+        h1{
+            font-size: 2rem;
+        }
+
+        h3{
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 280px){
+        h1{
             font-size: 1.5rem;
         }
 
-        @media (max-width: 450px){
-            font-size: 1rem;
+        h3{
+            font-size: 0.8rem;
         }
     }
 `
@@ -68,10 +81,7 @@ export const TitleContainer = styled.div`
 export const FooterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    @media (min-width: 375px) and (max-width: 550px){
-        margin: 0 20px;
-    }
-
+    justify-content: center;
 `
 
 export const CardContainer = styled.div`
@@ -88,11 +98,16 @@ export const CardContainer = styled.div`
 
     cursor: pointer;
 
+    @media (max-width: 730px){
+        width: 6rem;
+        height: 6rem;
+    }
+
     img{
         width: 65%;
         height: 65%;
 
-        @media (max-width: 550px){
+        @media (max-width: 730px){
             width: 60%;
             height: 60%;
         }
@@ -108,7 +123,7 @@ export const CardContainer = styled.div`
         font-size: 1.25rem;
         font-family: Poppins;
 
-        @media (max-width:550px){
+        @media (max-width: 730px){
             font-size: 1rem;
         }
     }
