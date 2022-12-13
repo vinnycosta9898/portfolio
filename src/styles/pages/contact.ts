@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: 5rem 0;
+    overflow: hidden;
 `
 
 export const TextContainer = styled.div`
