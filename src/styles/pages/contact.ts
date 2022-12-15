@@ -21,7 +21,7 @@ export const TextContainer = styled.div`
         -webkit-text-fill-color: transparent;
         
         font-family: Poppins;
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding-left: 2rem;
 
         @media (max-width: 575px){
