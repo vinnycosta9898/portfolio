@@ -6,7 +6,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    
+    @media (min-width: 1000px){
+        overflow: hidden;
+    }
 `
 
 export const Avatar = styled.img`
