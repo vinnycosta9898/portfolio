@@ -10,10 +10,10 @@ export const Container = styled.div`
 `
 
 export const Avatar = styled.img`
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
-    margin: 2rem 0; 
+    margin: 1rem 0; 
 
     @media (max-width: 730px){
         width: 20rem;
@@ -39,13 +39,13 @@ export const TitleContainer = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Great Vibes;
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     @media (max-width: 730px){
