@@ -6,12 +6,15 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    
+    @media (min-width: 1000px){
+        overflow: hidden;
+    }
 `
 
 export const Avatar = styled.img`
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     margin: 2rem 0;
 
