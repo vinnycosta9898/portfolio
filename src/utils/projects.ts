@@ -35,7 +35,7 @@ export const projects : ProjectsProps[] = [
     {
         id: "4",
         name: "Minha Carteira", 
-        img_url: "https://raw.githubusercontent.com/vinnycosta9898/minha-carteira/master/.github/photo2.png",
+        img_url: "https://raw.githubusercontent.com/vinnycosta9898/minha-carteira/master/photo2.png",
         repo_url: "https://github.com/vinnycosta9898/minha-carteira",
         techs: "React | Recharts | Styled-Components | TypeScript"   
     },
