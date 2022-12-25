@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
     width: 100vw;
     height: 7vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     a{
         color: #fff;
