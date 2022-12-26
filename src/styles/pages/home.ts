@@ -13,7 +13,7 @@ export const Avatar = styled.img`
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin-top: 5px; 
+    margin-top: 25px; 
 
     @media (max-width: 730px){
         width: 250px;
@@ -31,7 +31,7 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    margin-top: 10px;
+    margin-top: 25px;
 
     h1{
         background: -webkit-linear-gradient(45deg, rgb(0, 188, 212), rgb(0, 255, 149) 80%);
@@ -85,6 +85,7 @@ export const FooterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 25px;
 `
 
 export const CardContainer = styled.div`
