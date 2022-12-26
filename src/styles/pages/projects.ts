@@ -34,7 +34,7 @@ export const CardContainer = styled.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 25px;
+    margin: 15px 15px;
 
     @media (max-width: 550px){
         width: 250px;
