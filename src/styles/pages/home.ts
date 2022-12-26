@@ -10,19 +10,19 @@ export const Container = styled.div`
 `
 
 export const Avatar = styled.img`
-    width: 25rem;
-    height: 25rem;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    margin: 1rem 0; 
+    margin-top: 5px; 
 
     @media (max-width: 730px){
-        width: 20rem;
-        height: 20rem;
+        width: 320px;
+        height: 320px;
     }
 
     @media (max-width: 430px){
-        width: 15rem;
-        height: 15rem;
+        width: 240px;
+        height: 240px;
     }
 `
 
@@ -31,6 +31,7 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    margin-top: 10px;
 
     h1{
         background: -webkit-linear-gradient(45deg, rgb(0, 188, 212), rgb(0, 255, 149) 80%);
@@ -39,47 +40,48 @@ export const TitleContainer = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Great Vibes;
-        font-size: 4.5rem;
+        font-size: 72px;
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     @media (max-width: 730px){
         h1{
-            font-size: 3rem;
+            font-size: 48px;
         }
 
         h3{
-            font-size: 1.5rem;
+            font-size: 24px;
         }
     }
 
     @media (max-width: 430px){
         h1{
-            font-size: 2rem;
+            font-size: 32px;
         }
 
         h3{
-            font-size: 1rem;
+            font-size: 16px;
         }
     }
 
     @media (max-width: 280px){
         h1{
-            font-size: 1.5rem;
+            font-size: 24px;
         }
 
         h3{
-            font-size: 0.8rem;
+            font-size: 12px;
         }
     }
 `
 
 export const FooterContainer = styled.div`
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,22 +92,22 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 7rem;
-    height: 7rem;
+    width: 120px;
+    height: 120px;
     background-color: #313131;
     border: 3px solid #000;
-    border-radius: 1rem;
-    margin: 1rem 1rem;
+    border-radius: 16px;
+    margin: 16px 8px;
 
     cursor: pointer;
 
     @media (max-width: 730px){
-        width: 6rem;
-        height: 6rem;
+        width: 96px;
+        height: 96px;
     }
 
     img{
-        width: 65%;
+        width: 60%;
         height: 65%;
 
         @media (max-width: 730px){
@@ -121,15 +123,15 @@ export const CardContainer = styled.div`
 
     strong{
         color: #fff;
-        font-size: 1.25rem;
+        font-size: 20px;
         font-family: Poppins;
 
         @media (max-width: 730px){
-            font-size: 1rem;
+            font-size: 16px;
         }
 
         @media (max-width: 430px){
-            font-size: 0.8rem;
+            font-size: 14px;
         }
     }
 `
