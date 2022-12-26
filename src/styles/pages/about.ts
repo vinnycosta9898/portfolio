@@ -10,19 +10,19 @@ export const Container = styled.div`
 `
 
 export const Avatar = styled.img`
-    width: 25rem;
-    height: 25rem;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    margin: 2rem 0;
+    margin-top: 25px;
 
     @media (max-width: 730px){
-        width: 20rem;
-        height: 20rem;
+        width: 250px;
+        height: 250px;
     }
 
     @media (max-width: 430px){
-        width: 15rem;
-        height: 15rem;
+        width: 200px;
+        height: 200px;
     }
 `
 
@@ -32,7 +32,8 @@ export const ProfileDescription = styled.div`
     
     h3{
         font-family: Poppins;
-        font-size: 2rem;
+        font-size: 24px;
+        margin-top: 25px;
         text-align: center;
         width: 90%;
         
@@ -43,11 +44,11 @@ export const ProfileDescription = styled.div`
         -webkit-text-fill-color: transparent;
 
         @media (max-width: 730px){
-            font-size: 1.5rem;
+            font-size: 20px;
         }
 
         @media (max-width: 430px){
-            font-size: 1rem;
+            font-size: 15px;
         }
     }
 `
