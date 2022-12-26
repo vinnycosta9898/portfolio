@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const CardsContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
     gap: 0 1rem;
 
