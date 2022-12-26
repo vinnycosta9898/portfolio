@@ -10,19 +10,19 @@ export const Container = styled.div`
 `
 
 export const Avatar = styled.img`
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-top: 5px; 
 
     @media (max-width: 730px){
-        width: 320px;
-        height: 320px;
+        width: 250px;
+        height: 250px;
     }
 
     @media (max-width: 430px){
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
 `
 
@@ -40,13 +40,13 @@ export const TitleContainer = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Great Vibes;
-        font-size: 72px;
+        font-size: 64px;
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
-        font-size: 40px;
+        font-size: 32px;
     }
 
     @media (max-width: 730px){
