@@ -14,6 +14,7 @@ export const CardsContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
     gap: 0 1rem;
+    overflow: hidden;
 
     @media (max-width: 1260px){
         grid-template-columns: 1fr 1fr;
