@@ -13,7 +13,7 @@ export const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
-    gap: 0 1rem;
+    gap: 0 16px;
     overflow: hidden;
 
     @media (max-width: 1260px){
@@ -26,60 +26,61 @@ export const CardsContainer = styled.div`
 `
 
 export const CardContainer = styled.a`
-    width: 21rem;
-    height: 21rem;
+    width: 350px;
+    height: 350px;
     background-color: #313131;
-    border-radius: 1rem;
+    border-radius: 20px;
     border: 3px solid #000;
     cursor: pointer;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 1rem;
+    margin: 25px 25px;
 
     @media (max-width: 800px){
-        width: 20rem;
-        height: 20rem;
+        width: 300px;
+        height: 300px;
     }
 
     @media (max-width: 550px){
-        width: 18rem;
-        height: 18rem;
+        width: 250px;
+        height: 250px;
     }
 
     img{
         width: 100%;
         height: 80%;
-        border-radius: 0.9rem;
+        border-radius: 15px;
     }
 
     h2{
         color: #fff;
         font-family: Poppins;
-        font-size: 2rem;
+        font-size: 30px;
         
         @media (max-width: 800px){
-            font-size: 1.7rem;
+            font-size: 20px;
         }
 
         @media (max-width: 550px){
-            font-size: 1.3rem;
+            font-size: 15px;
         }
     }
 
     h3{
         color: #d7995b;
         font-family: Poppins;
-        font-size: 0.9rem;
+        font-size: 16px;
+        padding: 0 10px;
         text-align: center;
 
         @media (max-width: 800px){
-            font-size: 0.7rem;
+            font-size: 14px;
         }
 
         @media (max-width: 550px){
-            font-size: 0.6rem;
+            font-size: 12px;
         }
 
     }
