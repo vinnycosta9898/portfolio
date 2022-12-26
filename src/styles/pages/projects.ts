@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -11,7 +11,8 @@ export const Container = styled.div`
 
 export const CardsContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
     gap: 0 1rem;
 
     @media (max-width: 1260px){
