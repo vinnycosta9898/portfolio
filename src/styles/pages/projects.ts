@@ -24,8 +24,8 @@ export const CardsContainer = styled.div`
 `
 
 export const CardContainer = styled.a`
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background-color: #313131;
     border-radius: 20px;
     border: 3px solid #000;
@@ -35,11 +35,6 @@ export const CardContainer = styled.a`
     flex-direction: column;
     align-items: center;
     margin: 25px 25px;
-
-    @media (max-width: 800px){
-        width: 300px;
-        height: 300px;
-    }
 
     @media (max-width: 550px){
         width: 250px;
