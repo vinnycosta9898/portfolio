@@ -5,7 +5,6 @@ export const Container = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
     overflow: hidden;
 `
 
@@ -13,7 +12,6 @@ export const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
-    gap: 0 16px;
     overflow: hidden;
 
     @media (max-width: 1260px){
