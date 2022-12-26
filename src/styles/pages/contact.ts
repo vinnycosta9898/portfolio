@@ -31,8 +31,8 @@ export const TextContainer = styled.div`
 `
 
 export const CardContainer = styled.div`
-    width: 20rem;
-    height: 5rem;
+    width: 300px;
+    height: 70px;
     background-color: #313131;
     border-radius: 1rem;
     border: 3px solid #000;
@@ -49,21 +49,21 @@ export const CardContainer = styled.div`
     }
 
     img{
-        width: 4rem;
-        height: 4rem;
-        margin: 0 0.5rem;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
         
         @media (max-width: 575px){
-            width: 3rem;
-            height: 3rem;
+            width: 40px;
+            height: 40px;
         }
     }
 
     h3{
         color: #fff;
         font-family: Poppins;
-        font-size: 1.5rem;
-        padding: 0 0.5rem;
+        font-size: 24px;
+        padding: 0 10px;
     }
 
     &:hover{
