@@ -1,8 +1,11 @@
-import Head from 'next/head'
-
 import Image from 'next/image'
 
-import { Container, Avatar, TitleContainer, FooterContainer, CardContainer} from '../styles/pages/home'
+import { Container, 
+        Avatar, 
+        TitleContainer, 
+        FooterContainer, 
+        CardContainer
+       } from '../styles/pages/home'
 
 import { techs } from '../utils/techs'
 
@@ -18,7 +21,13 @@ export default function Home() {
       <FooterContainer>
         {techs.map((item) => (
               <CardContainer key={item.id}>
-                <Image src={item.img_url} alt={item.name} width={20} height={20} />
+                <Image 
+                    src={item.img_url} 
+                    alt={item.name} 
+                    width={20} 
+                    height={20} 
+                 />
+                
                 <strong>{item.name}</strong>
               </CardContainer>
             ))}

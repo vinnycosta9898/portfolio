@@ -31,7 +31,6 @@ export const ProfileDescription = styled.div`
     justify-content: center;
     
     h3{
-        font-family: Poppins;
         font-size: 24px;
         margin-top: 25px;
         text-align: center;

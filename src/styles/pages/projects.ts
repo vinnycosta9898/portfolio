@@ -49,7 +49,6 @@ export const CardContainer = styled.a`
 
     h2{
         color: #fff;
-        font-family: Poppins;
         font-size: 30px;
         
         @media (max-width: 800px){
@@ -63,7 +62,6 @@ export const CardContainer = styled.a`
 
     h3{
         color: #d7995b;
-        font-family: Poppins;
         font-size: 16px;
         padding: 0 10px;
         text-align: center;

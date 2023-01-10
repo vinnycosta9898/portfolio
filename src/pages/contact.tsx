@@ -1,4 +1,7 @@
-import { Container, CardContainer, TextContainer } from '../styles/pages/contact'
+import { Container, 
+        CardContainer, 
+        TextContainer 
+       } from '../styles/pages/contact'
 
 import Image from 'next/image'
 
@@ -14,7 +17,13 @@ export default function Contact(){
                 social.map((item) => (
                     <a href={item.url} key={item.id} target="blank">
                         <CardContainer>
-                            <Image src={item.img_url} alt={item.name} width={60} height={60}/>
+                            <Image 
+                                src={item.img_url} 
+                                alt={item.name} 
+                                width={60}
+                                height={60}
+                            />
+                            
                             <h3>{item.name}</h3>
                         </CardContainer>
                     </a>

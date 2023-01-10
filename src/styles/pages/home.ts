@@ -35,17 +35,16 @@ export const TitleContainer = styled.div`
 
     h1{
         background: -webkit-linear-gradient(45deg, rgb(0, 188, 212), rgb(0, 255, 149) 80%);
-        color: black;
         background-clip: text;
+        color: black;
+        font-family: Great Vibes;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: Great Vibes;
         font-size: 64px;
     }
 
     h3{
         color: #d7995b;
-        font-family: Poppins;
         font-size: 32px;
     }
 
@@ -125,7 +124,6 @@ export const CardContainer = styled.div`
     strong{
         color: #fff;
         font-size: 20px;
-        font-family: Poppins;
 
         @media (max-width: 730px){
             font-size: 16px;

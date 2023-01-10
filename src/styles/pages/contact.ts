@@ -20,7 +20,6 @@ export const TextContainer = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
-        font-family: Poppins;
         font-size: 2rem;
         padding-left: 2rem;
 

@@ -1,9 +1,15 @@
-import { Container, Avatar, ProfileDescription } from '../styles/pages/about'
+import { Container,
+         Avatar, 
+         ProfileDescription 
+        } from '../styles/pages/about'
 
 export default function About(){
     return(
         <Container>
-            <Avatar src="https://github.com/vinnycosta9898.png" alt="Profile Photo"/>
+            <Avatar 
+                src="https://github.com/vinnycosta9898.png" 
+                alt="Profile Photo" 
+            />
 
             <ProfileDescription>
                 <h3>
