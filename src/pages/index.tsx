@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/no-unescaped-entities */
-import { useContext } from 'react'
+import { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Great_Vibes, Poppins } from 'next/font/google'
@@ -13,14 +13,28 @@ import { tools } from '@/repositories/tools'
 import * as S from '@/styles/app'
 import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 import ProjectCard from '@/components/ProjectCard'
-import { PortfolioContext } from '@/context/PortfolioContext'
 
 export const GREATVIBES = Great_Vibes({ weight: '400', preload: false })
 export const POPPINS_400 = Poppins({ subsets: ['latin'], weight: ['400'] })
 export const POPPINS_700 = Poppins({ subsets: ['latin'], weight: ['700'] })
 
 export default function Home() {
-  const { handleClick } = useContext(PortfolioContext)
+  const targetAboutRef = useRef<HTMLDivElement>(null)
+  const experienceRef = useRef<HTMLDivElement>(null)
+  const projectsRef = useRef<HTMLDivElement>(null)
+
+  function handleClick(option: number) {
+    switch (option) {
+      case 1:
+        targetAboutRef.current?.scrollIntoView({ behavior: 'smooth' })
+        break
+      case 2:
+        experienceRef.current?.scrollIntoView({ behavior: 'smooth' })
+        break
+      case 3:
+        projectsRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
     <>
       <Header handleClick={handleClick} />
@@ -117,18 +131,13 @@ export default function Home() {
           <S.Projects>
             {projects.map((project) => {
               return (
-                <Link
-                  href={`/project/${project.id}`}
+                <ProjectCard
+                  id={project.id}
                   key={project.id}
-                  target="_blank"
-                >
-                  <ProjectCard
-                    id={project.id}
-                    name={project.name}
-                    description={project.description}
-                    techs={project.techs}
-                  />
-                </Link>
+                  name={project.name}
+                  description={project.description}
+                  techs={project.techs}
+                />
               )
             })}
           </S.Projects>

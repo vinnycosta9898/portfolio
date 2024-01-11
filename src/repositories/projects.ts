@@ -35,10 +35,10 @@ export const projects: ProjectCardProps[] = [
   },
   {
     id: '4',
-    name: 'Minha Carteira',
-    description:
-      'Dashboard Interativo que exibe entradas e saidas de uma carteira',
-    techs: 'React | Typescript | Styled-Componets | Vite ',
-    linkRepo: 'https://github.com/vinnycosta9898/minha-carteira',
+    name: 'Auth System JWT',
+    description: 'Pagina de Cadastro e autenticação de usuários',
+    techs:
+      'Fastify | Typescript | Prisma | NextJS | React hook Form | Zod | TailwindCSS ',
+    linkRepo: 'https://github.com/vinnycosta9898/auth-system-jwt',
   },
 ]

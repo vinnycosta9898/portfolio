@@ -156,6 +156,7 @@ export const AboutMeContainer = styled('div', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   marginTop: '2rem',
+  // background: 'pink',
 
   animation: `${slideToLeft} 4000ms`,
 
@@ -164,15 +165,11 @@ export const AboutMeContainer = styled('div', {
     fontSize: theme.fontSize.lg,
 
     [`@media ${media.medium}`]: {
-      fontSize: theme.fontSize.md,
+      fontSize: theme.fontSize.xsm,
     },
 
     [`@media ${media.tablet}`]: {
       fontSize: theme.fontSize.sm,
-    },
-
-    [`@media ${media.medium}`]: {
-      fontSize: theme.fontSize.xsm,
     },
   },
 
