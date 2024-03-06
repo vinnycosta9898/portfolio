@@ -131,13 +131,15 @@ export default function Home() {
           <S.Projects>
             {projects.map((project) => {
               return (
-                <ProjectCard
-                  id={project.id}
-                  key={project.id}
-                  name={project.name}
-                  description={project.description}
-                  techs={project.techs}
-                />
+                <Link href={project.linkRepo}>
+                  <ProjectCard
+                    id={project.id}
+                    key={project.id}
+                    name={project.name}
+                    description={project.description}
+                    techs={project.techs}
+                  />
+                </Link>
               )
             })}
           </S.Projects>

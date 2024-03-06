@@ -156,7 +156,6 @@ export const AboutMeContainer = styled('div', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   marginTop: '2rem',
-  // background: 'pink',
 
   animation: `${slideToLeft} 4000ms`,
 
@@ -332,29 +331,31 @@ export const ProjectsContainer = styled('div', {
 })
 
 export const Projects = styled('div', {
-  display: 'flex',
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
   flexWrap: 'wrap',
 
   [`@media ${media.large}`]: {
     width: '100%',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     flexWrap: 'wrap',
   },
 
   [`@media ${media.medium}`]: {
     width: '100%',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+
     display: 'block',
   },
 
   [`@media ${media.tablet}`]: {
     width: '100%',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     display: 'block',
   },
 
   [`@media ${media.mobile}`]: {
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     display: 'block',
   },
 })

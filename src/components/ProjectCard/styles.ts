@@ -10,7 +10,7 @@ export const ProjectCardContainer = styled('div', {
   borderRadius: '16px',
   cursor: 'pointer',
   padding: '1rem',
-  margin: '1rem',
+  marginTop: '1rem',
 
   h1: {
     color: '$gray_100',
@@ -44,7 +44,7 @@ export const ProjectCardContainer = styled('div', {
   [`@media ${media.small}`]: {
     width: '25rem',
     height: 'max-content',
-    margin: '2rem 0',
+    marginTop: '2rem 0',
   },
 
   [`@media ${media.tablet}`]: {
