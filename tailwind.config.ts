@@ -9,8 +9,10 @@ const config: Config = {
   theme: {
     colors:{
       blue: '#170B2A',
+      blue_twitter: '#00acee',
       transparent: '#FFFFFF10',
       pink: '#FF79C6',
+      purple: '#BD93F9',
       yellow: '#F1FA8C',
       white: '#FFF'
     },
