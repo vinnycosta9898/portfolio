@@ -1,41 +1,48 @@
 'use client'
+import { Avatar } from '@/components/Avatar'
+import { ExperienceCard } from '@/components/ExperienceCard'
+import { Header } from '@/components/Header'
+import { MeCard } from '@/components/MeCard'
+import { ProjectCard } from '@/components/ProjectCard'
+import { TechCard } from '@/components/TechCard'
+import { TypeWriterName } from '@/components/TypeWritterName'
+import { projects } from '@/repositories/projects'
+import { techs } from '@/repositories/techs'
+import { z } from 'zod'
 
-import { Avatar } from "@/components/Avatar";
-import { ExperienceCard } from "@/components/ExperienceCard";
-import { Header } from "@/components/Header";
-import { MeCard } from "@/components/MeCard";
-import { ProjectCard } from "@/components/ProjectCard";
-import { TechCard } from "@/components/TechCard";
-import { TypeWriterName } from "@/components/TypeWritterName";
-import { projects } from "@/repositories/projects";
-import { techs } from "@/repositories/techs";
+const formSchema = z.object({
+  name: z
+    .string()
+    .min(2, { message: 'O Nome deve conter no minímo 2 carachetheres' })
+    .max(24, { message: 'O Nome deve conter no máximo 24 carachetheres' }),
+  subject: z.string(),
+  content: z.string(),
+})
 
 export default function Home() {
   return (
     <div className="min-w-wscreen min-h-screen bg-blue flex flex-col items-center">
-      <Header/>
-      <Avatar/>
-      <TypeWriterName/>
+      <Header />
+      <Avatar />
+      <TypeWriterName />
       <div>
-        <h1 className="font-bold text-2xl text-yellow my-4" >Sobre Mim</h1>
-        <MeCard/>
+        <h1 className="font-bold text-2xl text-yellow my-4">Sobre Mim</h1>
+        <MeCard />
       </div>
 
       <div>
         <h1 className="font-bold text-2xl text-pink my-4">Experiência</h1>
-        <ExperienceCard/>
+        <ExperienceCard />
       </div>
 
       <div>
-        <h1 className="font-bold text-2xl text-purple my-4">Tecnologias que utlizo</h1>
+        <h1 className="font-bold text-2xl text-purple my-4">
+          Tecnologias que utlizo
+        </h1>
         <div className="w-[50rem] grid grid-cols-4 gap-4">
           {techs.map((tech) => {
-            return(
-              <TechCard
-                logo={tech.logo}
-                title={tech.title}
-                key={tech.id}
-              />
+            return (
+              <TechCard logo={tech.logo} title={tech.title} key={tech.id} />
             )
           })}
         </div>
@@ -44,7 +51,7 @@ export default function Home() {
       <div>
         <h1 className="font-bold text-2xl text-purple my-4">Meus projetos</h1>
         {projects.map((project) => {
-          return(
+          return (
             <ProjectCard
               key={project.id}
               title={project.title}
@@ -56,29 +63,27 @@ export default function Home() {
       </div>
 
       <div className="w-[50rem] flex flex-col gap-4">
-        <h1 className="font-bold text-2xl text-blue_twitter my-4">Entre em contato comigo</h1>
-        <input 
+        <h1 className="font-bold text-2xl text-blue_twitter my-4">
+          Entre em contato comigo
+        </h1>
+        <input
           type="text"
           placeholder="Digite o seu nome"
           className="w-full h-[3rem] bg-transparent backdrop-blur-xl rounded-lg text-white outline-none p-2"
         />
-        <input 
+        <input
           type="text"
           placeholder="Digite o assunto"
           className="w-full h-[3rem] bg-transparent backdrop-blur-xl rounded-lg text-white outline-none p-2"
         />
-        <textarea 
+        <textarea
           placeholder="Digite o Email"
           className="w-full h-[16rem] bg-transparent backdrop-blur-xl rounded-lg text-white outline-none p-2"
-        >
-
-        </textarea>
-        <button
-          className="w-full h-[3rem] bg-blue_twitter text-yellow font-bold rounded-lg outline-none"
-        >
+        ></textarea>
+        <button className="w-full h-[3rem] bg-blue_twitter text-yellow font-bold rounded-lg outline-none">
           Enviar Email
         </button>
       </div>
     </div>
-  );
+  )
 }
