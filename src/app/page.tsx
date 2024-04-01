@@ -2,6 +2,7 @@
 
 import { Avatar } from "@/components/Avatar";
 import { Header } from "@/components/Header";
+import { MeCard } from "@/components/MeCard";
 import { TypeWriterName } from "@/components/TypeWritterName";
 
 export default function Home() {
@@ -10,6 +11,10 @@ export default function Home() {
       <Header/>
       <Avatar/>
       <TypeWriterName/>
+      <div>
+        <h1 className="font-bold text-2xl text-yellow my-4" >Sobre Mim</h1>
+        <MeCard/>
+      </div>
     </div>
   );
 }
