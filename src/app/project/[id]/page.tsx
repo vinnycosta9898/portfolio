@@ -3,13 +3,24 @@
 import { matchProjectById } from '@/utils/matchProjectById'
 import Image from 'next/image'
 import Link from 'next/link'
+import { IoArrowBack } from "react-icons/io5";
+import colors from 'tailwindcss/colors'
 
 export default function Project({ params }: { params: { id: string } }) {
   const project = matchProjectById(params.id)
 
   return (
     <div className="min-w-screen min-h-screen bg-blue flex flex-col items-center">
-      <h1 className="text-4xl text-yellow mt-16 md:text-3xl sm:text-2xl xsm:text-2xl">
+      <Link 
+        className="absolute top-5 left-5"
+        href='/'
+      >
+        <IoArrowBack
+          size={30}
+          color={colors.white}
+        />
+      </Link>
+      <h1 className="text-4xl text-yellow mt-16 md:text-3xl sm:text-2xl xsm:text-2xl overflow-y-hidden">
         {project?.title}
       </h1>
       <span className="text-pink text-center md:text-lg sm:text-sm xsm:text-sm">

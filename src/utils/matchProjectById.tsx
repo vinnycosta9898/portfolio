@@ -21,7 +21,7 @@ export const matchProjectById = (id: string) => {
         id: '2',
         title: 'Ignite Coffe Delivery',
         description:
-          'Aplicacã frontend que simula o marketplace de uma cafeteria',
+          'Aplicacão frontend que simula o marketplace de uma cafeteria',
         techsUtilized:
           'React | React Hook Form | Zod | StitchesJS | Typescript',
         projectImgs: [

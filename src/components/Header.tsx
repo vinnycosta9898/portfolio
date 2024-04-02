@@ -6,7 +6,7 @@ interface HeaderProps {
 
 export function Header({ handleClick }: HeaderProps) {
   return (
-    <div className="min-w-full h-[6rem] flex justify-around items-center">
+    <div className="w-full h-[6rem] flex justify-around items-center">
       <Link
         href="/"
         className="text-xl text-white font-bold hover:text-blue_twitter lg:text-xl md:text-lg sm:text-lg xsm:text-sm"
