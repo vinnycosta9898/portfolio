@@ -4,8 +4,9 @@ interface ProjectsProps {
   description: string
   techsUtilized: string
 }
+;[]
 
-export const projects = [
+export const projects: ProjectsProps[] = [
   {
     id: '1',
     title: 'React Movies',

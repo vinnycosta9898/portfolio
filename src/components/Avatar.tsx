@@ -9,7 +9,7 @@ export function Avatar() {
       height={320}
       priority
       quality={100}
-      className="rounded-[999px] mt-8"
+      className="rounded-[999px] mt-8 lg:w-[24rem] lg:h-[24rem] md:w-[20rem] md:h-[20rem] xsm:w-[15rem] xsm:h-[15rem]"
     />
   )
 }

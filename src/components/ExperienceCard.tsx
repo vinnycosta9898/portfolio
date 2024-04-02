@@ -1,6 +1,6 @@
 export function ExperienceCard() {
   return (
-    <section className="w-[50rem] h-max bg-transparent backdrop-blur-xl rounded-lg p-4 flex flex-col">
+    <section className="w-[50rem] h-max bg-transparent backdrop-blur-xl rounded-lg p-4 flex flex-col md:w-[50rem] sm:w-[30rem] xsm:w-[20rem]">
       <header className="flex justify-between">
         <h1 className="text-yellow">Mobilize Financial services</h1>
         <span className="text-pink">Abr-2023 - Nov-2023</span>
