@@ -10,7 +10,7 @@ export function TypeWriterName() {
             .pauseFor(2500)
             .start()
             .deleteAll()
-            .typeString('Im a Full Stack developer')
+            .typeString("I'm am Full Stack developer")
         }}
         options={{
           cursor: '',

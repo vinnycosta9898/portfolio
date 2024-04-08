@@ -18,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Toaster richColors />
-      <body
-        className={`${poppins.className} min-w-screen bg-blue`}
-      >
+      <body className={`${poppins.className} min-w-screen bg-blue`}>
         {children}
       </body>
     </html>

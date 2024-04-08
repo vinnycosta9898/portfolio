@@ -61,8 +61,10 @@ export default function Home() {
         break
       case 3:
         projectsRef.current?.scrollIntoView({ behavior: 'smooth' })
+        break
       case 4:
         contactRef.current?.scrollIntoView({ behavior: 'smooth' })
+        break
     }
   }
 
@@ -90,7 +92,9 @@ export default function Home() {
         viewport={{ root: scrollRef }}
         ref={meRef}
       >
-        <h1 className="font-bold text-2xl text-yellow my-4 overflow-y-hidden">Sobre Mim</h1>
+        <h1 className="font-bold text-2xl text-yellow my-4 overflow-y-hidden">
+          Sobre Mim
+        </h1>
         <MeCard />
       </motion.div>
 
@@ -100,7 +104,9 @@ export default function Home() {
         viewport={{ root: scrollRef }}
         ref={experienceRef}
       >
-        <h1 className="font-bold text-2xl text-pink my-4 overflow-y-hidden">Experiência</h1>
+        <h1 className="font-bold text-2xl text-pink my-4 overflow-y-hidden">
+          Experiência
+        </h1>
         <ExperienceCard />
       </motion.div>
 
@@ -133,7 +139,9 @@ export default function Home() {
         ref={projectsRef}
         className="w-[50rem] md:w-[50rem] sm:w-[30rem] xsm:w-[20rem]"
       >
-        <h1 className="font-bold text-2xl text-purple my-4 overflow-y-hidden">Meus projetos</h1>
+        <h1 className="font-bold text-2xl text-purple my-4 overflow-y-hidden">
+          Meus projetos
+        </h1>
         {projects.map((project) => {
           return (
             <ProjectCard
