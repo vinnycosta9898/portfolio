@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { env } from '@/env'
 
 export const api = axios.create({
-  baseURL: 'https://viniciuscosta1998.vercel.app/api',
+  baseURL: '/api',
   headers: {
     'Content-Type': 'application/json',
   },
