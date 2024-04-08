@@ -1,12 +1,11 @@
 import { EmailTemplate } from '../../../components/EmailTemplate'
 import { Resend } from 'resend'
-import { NextResponse } from 'next/server'
-import { FormSchemaData } from '@/app/page'
+import { NextRequest, NextResponse } from 'next/server'
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
-  const { name, subject, content } = req.body as unknown as FormSchemaData
+  const { name, subject, content } = await req.json()
 
   console.log(name, subject, content)
 

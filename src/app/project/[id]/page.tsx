@@ -17,7 +17,7 @@ export default function Project({ params }: { params: { id: string } }) {
       >
         <IoArrowBack
           size={30}
-          color={colors.white}
+          color={colors.white} 
         />
       </Link>
       <h1 className="text-4xl text-yellow mt-16 md:text-3xl sm:text-2xl xsm:text-2xl overflow-y-hidden">
