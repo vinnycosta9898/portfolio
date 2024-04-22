@@ -28,8 +28,8 @@ export const techs: TechProps[] = [
   },
   {
     id: '5',
-    logo: 'https://cdn.worldvectorlogo.com/logos/react-2.svg',
-    title: 'React',
+    logo: 'https://cdn.worldvectorlogo.com/logos/vitejs.svg',
+    title: 'Vitest',
   },
   {
     id: '6',

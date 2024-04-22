@@ -1,8 +1,6 @@
-import { env } from '@/env'
 import axios from 'axios'
 
-const baseURL =
-  env.NODE_END === 'dev' ? 'http://localhost:3000/api' : `${env.URL}/api`
+const baseURL = 'https://viniciuscosta1998.vercel.app/api'
 
 export const api = axios.create({
   baseURL,

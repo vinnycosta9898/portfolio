@@ -46,7 +46,7 @@ export default function Home() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<FormSchemaData>({
     resolver: zodResolver(formSchema),
   })
@@ -70,7 +70,7 @@ export default function Home() {
 
   async function handleSendEmail(data: FormSchemaData) {
     try {
-      await api.post('/send', {
+      api.post('/send', {
         name: data.name,
         subject: data.subject,
         content: data.content,
@@ -197,7 +197,6 @@ export default function Home() {
         <button
           className="w-full h-[3rem] bg-blue_twitter text-yellow font-bold rounded-lg outline-none disabled:bg-blue_twitter_opacity"
           type="submit"
-          disabled={isSubmitting}
         >
           Enviar Email
         </button>
